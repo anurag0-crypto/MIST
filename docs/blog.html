@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Personal Blog</title>
+  <link rel="stylesheet" href="js1.css">
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li class="active" onclick="showSection('about', this)">About Me</li>
+      <li onclick="showSection('hobbies', this)">Hobbies</li>
+      <li onclick="showSection('contact', this)">Contact</li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- ABOUT -->
+    <section id="about" class="content">
+      <h1>About Me</h1>
+
+      <div class="image-card">
+        <img src="aesthetic-study-table-decor.jpg" alt="Study table setup">
+
+        <div class="overlay">
+          <p>
+            My Setup 😎
+            <span class="reveal-btn" onclick="revealText()">…?</span>
+          </p>
+
+          <p id="hidden-text" class="hidden-text">
+            nah not really 😄
+          </p>
+        </div>
+      </div>
+
+      <p class="about-text">
+        Hi! I am Anurag, a first year CSE student at MIT Manipal.
+        I recently completed my first semester and enjoy coding.
+      </p>
+    </section>
+
+    <!-- HOBBIES -->
+    <section id="hobbies" class="content hidden">
+      <h1>My Hobbies</h1>
+      <ul>
+        <li>Listening to music</li>
+        <li>Playing chess</li>
+        <li>Playing video games</li>
+      </ul>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="content hidden">
+      <h1>Contact</h1>
+      <p>Email: anuragkar2007@gmail.com</p>
+      <p>Instagram: @anur___07</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
